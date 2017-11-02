@@ -1,0 +1,15 @@
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  height: 100%;
+  width: 100%;
+  display: none;
+  background: rgba(50, 50, 50, 0);
+  justify-content: center;
+  align-items: center;
+  perspective: 500px; }
+  .modal-background.active {
+    display: flex;
+    background: rgba(50, 50, 50, 0.7); }

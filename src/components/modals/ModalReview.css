@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700");
+.modal__close {
+  display: none; }
+
+.modal.modal__inner__review {
+  color: #111;
+  min-width: 550px;
+  padding-top: 0;
+  padding: 15px 0 0 5px;
+  animation: modalEnter 300ms ease-in-out forwards; }
+  .modal.modal__inner__review form {
+    width: 94%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.3em; }
+  .modal.modal__inner__review p {
+    width: 57%; }
+    .modal.modal__inner__review p span {
+      font-weight: bolder; }
+  .modal.modal__inner__review label[for=title] {
+    width: 20%;
+    display: inline-block; }
+  .modal.modal__inner__review input, .modal.modal__inner__review button {
+    margin: 10px 0;
+    box-shadow: none;
+    border-style: none;
+    border: 1px solid #898989; }
+  .modal.modal__inner__review input[type=text] {
+    width: 75%;
+    height: 1.3em; }
+  .modal.modal__inner__review textarea {
+    width: 100%;
+    height: 200px;
+    padding: 0.4em; }
+  .modal.modal__inner__review button {
+    background-color: #4698a4;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 3px;
+    font-size: 0.7em; }
+
+.modal__review__rating {
+  width: 38%;
+  display: inline-block;
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: left; }
+  .modal__review__rating label {
+    display: inline-block;
+    color: #ececec;
+    margin: 0 2px;
+    padding: 0; }
+    .modal__review__rating label::before {
+      content: "\2605";
+      line-height: 18px;
+      text-align: center;
+      font-size: 35px;
+      cursor: pointer;
+      filter: drop-shadow(0 0 1px #4698a4); }
+    .modal__review__rating label:hover {
+      color: #4698a4; }
+      .modal__review__rating label:hover ~ label {
+        color: #4698a4; }
+  .modal__review__rating input {
+    display: none; }
+    .modal__review__rating input:checked ~ label {
+      color: #4698a4; }
+
+@keyframes modalEnter {
+  0% {
+    opacity: 0;
+    transform: scale(0.5); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }

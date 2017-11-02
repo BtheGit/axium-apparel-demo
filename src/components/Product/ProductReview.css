@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700");
+.product__review {
+  display: flex;
+  margin: 25px 0; }
+  .product__review:first-of-type {
+    margin-top: 0; }
+  .product__review figure {
+    width: 200px;
+    height: 100%; }
+    .product__review figure img {
+      border: 1px solid white; }
+    .product__review figure figcaption {
+      margin-top: 10px;
+      font-weight: 700; }
+
+.product__review__body {
+  width: calc(100% - 200px);
+  height: 100%; }
+  .product__review__body header {
+    display: flex;
+    margin-bottom: 20px; }
+    .product__review__body header h2 {
+      margin-right: 10px;
+      font-weight: 700;
+      font-size: 1.4em;
+      letter-spacing: 1px; }
+    .product__review__body header h3 {
+      margin-right: 10px;
+      font-size: 1.4em; }
+    .product__review__body header img {
+      margin: 0 3px; }

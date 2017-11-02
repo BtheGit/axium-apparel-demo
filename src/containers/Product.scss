@@ -1,0 +1,12 @@
+@import '../styles/variables';
+
+.product__outer {
+  margin-top: $size-header-height-main + $size-header-height-sub;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-blue-dark;
+}

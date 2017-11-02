@@ -1,0 +1,45 @@
+@import '../../styles/variables';
+
+.product__reviews {
+  width: 100%;
+  color: $color-white;
+
+  button {
+    background: none;
+    border: none;
+    display: inline;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    outline-offset: 0;
+    color: $color-white;
+    text-decoration: underline;
+  }
+}
+
+.product__reviews__inner {
+  max-width: $size-inner-width;
+  margin: 0 auto;
+}
+
+.product__reviews__header {
+  display: flex;
+  align-items: center;
+  margin-left: $size-product_reviews-sidebar;
+
+  h1 {
+    margin-right: 50px;
+    font-size: 3em;
+  }
+
+  button {
+    padding-top: 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+
+    &:focus {
+      filter: drop-shadow(0 0 1px rgba(0,0,255,0.8));
+    }
+  }
+}

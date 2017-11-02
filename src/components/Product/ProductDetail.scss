@@ -1,0 +1,38 @@
+@import '../../styles/variables';
+
+.product__detail {
+  z-index: 2;
+  width: 100%;
+  background-color: $color-grey-dark;
+  color: $color-white;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.3);    
+}
+
+.product__detail__inner {
+  max-width: $size-inner-width;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 100px;
+  display:flex;
+
+  figure {
+    width: 50%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+  }
+
+  .product__detail__body {
+    max-width: 300px;
+    margin-left: 20px;
+
+    p {
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+  }
+}

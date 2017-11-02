@@ -1,0 +1,50 @@
+@import '../../styles/variables';
+
+.product__review {
+  display: flex;
+  margin: 25px 0;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  figure {
+    width: $size-product_reviews-sidebar;
+    height: 100%;
+
+    img {
+      border: 1px solid $color-white;
+    }
+
+    figcaption {
+      margin-top: 10px;
+      font-weight: 700;
+    }
+  }
+}
+
+.product__review__body {
+  width: calc(100% - #{$size-product_reviews-sidebar});
+  height: 100%;
+  
+  header {
+    display: flex;
+    margin-bottom: 20px;
+
+    h2 {
+      margin-right: 10px;
+      font-weight: 700;
+      font-size: 1.4em;
+      letter-spacing: 1px;
+    }
+
+    h3 {
+      margin-right: 10px;
+      font-size: 1.4em;
+    }
+
+    img {
+      margin: 0 3px;
+    }
+  }
+}

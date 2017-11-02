@@ -1,0 +1,64 @@
+@import "../styles/variables";
+
+footer {
+  height: $size-footer-height;
+  width: 100%;
+  background-color: $color-black;
+  font-size: 0.8em;
+}
+
+.footer__inner {
+  height: 100%;
+  width: $size-inner-width;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+}
+
+.footer__nav {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;  
+}
+
+a.footer__link {
+  position: relative;
+  color: $color-white;
+  flex-grow: 3;
+
+  &:not(:nth-child(5))::after {
+    position: absolute;
+    content: '';
+    top: 25%;
+    right: 0;
+    height: 50%;
+    width: 1px;
+    background-color: $color-white;      
+  }
+}
+
+a.footer__link--icon {
+  flex-grow: 1;
+  height: 100%;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  img {
+    max-height: 80%;
+    margin: 0 5px;
+    width: auto;
+  }
+  
+  &:last-child {
+    img {
+      transform: translateY(20%);
+    }
+  }
+}
