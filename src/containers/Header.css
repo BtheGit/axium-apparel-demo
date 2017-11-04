@@ -6,7 +6,8 @@
   width: 100%;
   top: 0;
   left: 0;
-  user-select: none; }
+  user-select: none;
+  overflow: hidden; }
 
 .header__main__outer {
   z-index: 2;
@@ -16,11 +17,19 @@
 
 .header__main__inner {
   height: 100%;
-  width: 1000px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: flex-start; }
+  @media screen and (min-width: 700px) {
+    .header__main__inner {
+      flex-direction: row;
+      justify-content: space-between; } }
+  @media screen and (min-width: 1050px) {
+    .header__main__inner {
+      width: 1000px; } }
   .header__main__inner > * {
     margin-top: 30px; }
 

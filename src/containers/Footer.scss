@@ -4,26 +4,43 @@ footer {
   height: $size-footer-height;
   width: 100%;
   background-color: $color-black;
-  font-size: 0.8em;
+  font-size: 0.7em;
+  overflow: hidden;
+
+  @media screen and (min-width: $break-small){
+    font-size: 0.8em;
+  }
 }
 
 .footer__inner {
   height: 100%;
-  width: $size-inner-width;
+  width: 100%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
+  
+  @media screen and (min-width: $break-med) {
+    flex-direction: row;
+    width: $size-inner-width;
+    justify-content: space-between;
+  }
 
 }
 
 .footer__nav {
-  width: 60%;
+  width: 90%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  text-align: center;  
+  text-align: center; 
+  margin: 5px 0; 
+
+  @media screen and (min-width: $break-med) {
+    width: 60%;
+  }
 }
 
 a.footer__link {
@@ -31,14 +48,16 @@ a.footer__link {
   color: $color-white;
   flex-grow: 3;
 
-  &:not(:nth-child(5))::after {
-    position: absolute;
-    content: '';
-    top: 25%;
-    right: 0;
-    height: 50%;
-    width: 1px;
-    background-color: $color-white;      
+  @media screen and (min-width: $break-small) {
+    &:not(:nth-child(5))::after {
+      position: absolute;
+      content: '';
+      top: 25%;
+      right: 0;
+      height: 50%;
+      width: 1px;
+      background-color: $color-white;      
+    }
   }
 }
 
