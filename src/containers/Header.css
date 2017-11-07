@@ -6,8 +6,7 @@
   width: 100%;
   top: 0;
   left: 0;
-  user-select: none;
-  overflow: hidden; }
+  user-select: none; }
 
 .header__main__outer {
   z-index: 2;
